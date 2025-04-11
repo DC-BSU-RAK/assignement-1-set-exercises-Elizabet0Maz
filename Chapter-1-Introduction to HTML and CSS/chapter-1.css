@@ -1,0 +1,23 @@
+.image-box {
+    width: 590px;   /*box width */
+    height: 300px;  /*box height */
+    border: 7px solid #000; /*border specifications*/
+    overflow: hidden;      /* Hides overflow */
+  }
+  
+.image-box img {
+    width: 100%;   /*image width*/
+    height: 100%;  /*image height*/  
+    object-fit: cover; /*maintains aspect ratio*/
+  }
+.image-box3 {
+    width: 590px;   /*box width */
+    height: 400px;  /*box height */
+    border: 7px solid #000; /*border specifications*/
+    overflow: hidden;      /* Hides overflow */
+  }
+.image-box3 img {
+    width: 100%;   /*image width*/
+    height: 100%;     /*image height*/
+    object-fit: cover; /*maintains aspect ratio*/
+  }
