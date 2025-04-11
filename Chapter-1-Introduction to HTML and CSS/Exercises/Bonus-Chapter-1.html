@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elizabet Maznychenko"> <!-- Author metadata -->
+    <title>Recipe</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="Bonus-Chapter-1.css"> <!--Links external CSS file-->
+    <!--Custom Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Container for loader-->
+<div id="loader-container">
+    <div id="loader"></div>
+    <!--left side of the loader and right side-->
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<!--JS Library-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!--Inline JS-->
+<script>
+$(document).ready(function() {
+    // Disables scrolling during loading
+    $('body').css('overflow', 'hidden');
+
+    // Simulate loading
+    setTimeout(function() {
+        $('body').addClass('active'); // Hides the loader
+        $('body').css('overflow', 'auto'); //enables scrolling 
+    }, 3000); //loading time
+});
+</script>
+<!--Division for the content box-->
+<div class="content-box">
+    <!--heading with special google font-->
+<h1 class="lobster-regular">Ukrainian Traditional Borscht</h1>
+ <!-- Image with class "image-box" -->
+<div class="image-box">
+    <img src="pexels-nadin-sh-78971847-18955544.jpg" alt="Borscht Image"> 
+</div>
+<!-- Introduction about Borscht-->
+<p>Borscht is the perfect cold-weather soup — it’s rich, earthy, and has just the right amount of sour. I love borscht’s deep ruby-red color, rib-sticking heartiness, and the fact that it’s full of vegetables, which feels like a win come wintertime.</p>
+<p>Borscht is endlessly riffable. Plus, it’s a great way to use up the vegetables you have on hand. Because the beets and red cabbage will stain any other vegetables you add a bright red, they’ll end up blending in seamlessly (just watch out for your shirt and kitchen towels!). So if your memories of borscht consist of the sickly sweet jarred variety, you owe it to yourself to give the homemade variety a chance.</p>
+<h2 class="lobster-regular" id="Ingredients">Ingredients</h2>
+<!--Heading for Broth-->
+<h1>For the broth</h1>
+<!-- Image with class "image-box" -->
+<div class="image-box">
+    <img src="pexels-yankrukov-6617530.jpg" alt="Borscht Image">
+</div>
+<!--Unordered List-->
+<ul>
+    <li>1½-2 litres of water</li>    
+    <li>400-500 g beef on the bone</li>
+</ul>
+<!-- Frying Heading-->
+<h1>For frying</h1>
+<!-- Image with class "image-box" -->
+<div class="image-box">
+    <img src="frying.jpg"Borscht Image">
+</div>
+<!--Unordered List-->
+<ul>
+    <li>2 small beetroot</li>
+    <li>1 medium carrot</li>
+    <li>3 medium onions</li>
+    <li>4-5 tablespoons of vegetable oil</li>
+    <li>A pinch of citric acid, a little table vinegar or ½ a lemon</li>
+    <li>2 tablespoons of tomato paste</li>
+</ul>
+<!--Borscht Heading-->
+<h1>For Borscht</h1>
+<!-- Image with class "image-box" -->
+<div class="image-box">
+    <img src="pexels-nadin-sh-78971847-18743159.jpg" alt="Borscht Image">
+</div>
+<!--Unordered List-->
+<ul>
+    <li>300 g fresh white cabbage</li>
+    <li>4 medium potatoes</li>
+    <li>Salt one teaspoon</li>
+    <li>1-2 dried bay leaves</li>
+    <li>2 tablespoons of herbs</li>
+    <li>1 garlic clove - Optional</li>
+    <li>A pinch of ground black pepper - Optional</li>
+</ul>
+<!--Cooking Method Heading with id method-->
+<h2 id="Method">Cooking Method</h2>
+<!--Heading for the Broth-->
+<h3>1. Preparing the Broth</h3>
+<!--Ordered List-->
+<ol>
+    <li>Pour cold water into a saucepan, place the meat in it and put it on a medium heat. The broth will taste better if you use meat on the bone.</li>
+    <li>Keep an eye on the broth, skim off the foam before boiling.</li>
+    <li>When the liquid boils, cover the pot with a lid and cook over low heat for an hour and a half.</li>
+</ol>
+<!--Heading for the stir-fry-->
+<h3>2. Preparing the stir-fry</h3>
+<!--Ordered List-->
+<ol>
+    <li>Wash and peel the beetroot, carrot and onion. Grate the beetroot on a coarse grater and the carrot on a medium grater. Cut the onion into small cubes.</li>
+    <li>Pour oil into a frying pan, turn on medium heat. Fry the onions and carrots, stirring, for about 5 minutes.</li>
+    <li>Then put the beetroot in. Add citric acid, vinegar or lemon juice. This will make the borscht really red and give it a pleasant sourness.</li>
+    <li>Cook the roast for a further 5 minutes. Then add the tomato paste, stir and leave on the heat for another 5-7 minutes.</li>
+</ol>
+<!--Finishing the Borscht heading-->
+<h3>Finish the Borscht</h3>
+<!--Ordered List-->
+<ol>
+    <li>When the broth has boiled, remove the meat from the broth. While it cools down, pour the shredded cabbage into the pot. After 5-10 minutes, add potatoes cut into straws or cubes.</li>
+    <li>You can change the order in which the vegetables are put in. If the cabbage is young, it is better to add it after the potatoes. Or at the same time, if your potatoes boil quickly.</li>
+    <li>While the potatoes are boiling, separate the meat from the bone and cut into cubes. Return it to the soup. Salt to taste.</li>
+    <li>Add the stir-fry and stir to combine.</li>
+    <li>Throw in the bay leaf and finely chopped herbs. Cover the pot with a lid and simmer for another 5-7 minutes.</li>
+    <li>For flavour, you can add some crushed garlic, ground cloves or black pepper to the pot. Leave the borscht under the lid to infuse for 5-10 minutes.</li>
+</ol>
+<!--Serving suggestions heading-->
+<h2>How to Serve Borscht</h2>
+ <!-- Image with class "image-box3" -->
+<div class="image-box3">
+    <img src="pexels-nikita-krasnov-5999644-10467829 (1).jpg" alt="Borscht Image">
+</div>
+<!--Paragraphs with Suggestions-->
+<h3 id="Special-Text">Borscht can be eaten immediately after cooking. But, as a rule, it tastes even better the next day.</h3>
+<h3 id="Special-Text">Add sour cream and fresh herbs to a plate. If you prefer it a little more mild, add a slice of lemon.</h3>
+<h3 id="Special-Text">Serve borscht with rye bread or muffins rubbed with garlic. Lard and pampushki will also complement the dish perfectly.</h3>
+</div>
+</body>
+</html>

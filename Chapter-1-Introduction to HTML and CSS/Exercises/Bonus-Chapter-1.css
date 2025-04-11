@@ -1,0 +1,236 @@
+/*adds before body to have a background behind the content box*/
+body::before {
+    content: "";
+    /*sets the position*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('cherries.jpg') center/cover no-repeat; /*link to the image and ensures to not repeat it*/
+    filter: blur(10px); /*blurs background */
+    z-index: -1; /* Puts it behind content */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /*sets the font*/
+    /*positions the contents*/
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%; /*body width */
+    overflow-x: hidden; /* disables horizontal scroll */
+    overflow-y: hidden; /* Disables vertical scroll*/
+}
+
+.image-box {
+    width: 590px;   /*box width */
+    height: 300px;  /*box height */
+    border: 7px solid #000; /*border specifications*/
+    overflow: hidden;      /* Hides overflow */
+  }
+  
+.image-box img {
+    width: 100%;   /*image width*/
+    height: 100%;  /*image height*/  
+    object-fit: cover; /*maintains aspect ratio*/
+  }
+.image-box3 {
+    width: 590px;   /*box width */
+    height: 400px;  /*box height */
+    border: 7px solid #000; /*border specifications*/
+    overflow: hidden;      /* Hides overflow */
+  }
+.image-box3 img {
+    width: 100%;   /*image width*/
+    height: 100%;     /*image height*/
+    object-fit: cover; /*maintains aspect ratio*/
+  }
+/*h2 specifications*/
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+/*unordered list specifications*/
+li {
+    border-bottom: 1px solid #ddd; /* Adds a solid line*/
+    padding: 5px 0; /* Adds padding*/
+}
+
+/*style for ordered list*/
+ol li {
+    border-bottom: 1px dashed #bbb; /*adds a dashed border inside <ol> */
+}
+
+/* Style for the container */
+.content-box {
+    background-color: white; /*background colour*/
+    max-width: 600px; /*limits the width*/
+    width: 90%; /* Makes the box take up 90%*/
+    padding: 40px; /*adds padding inside the box on all the sides */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds box shadow*/
+    border-radius: 8px; /*rounds the corners*/
+    text-align: center; /*aligns the text*/
+}
+
+/*h1 Style specifications*/
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    color: #333;
+}
+/*h2 Style specifications*/
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #555;
+}
+/*h3 Style specifications*/
+h3 {
+    font-size: 20px;
+    color: #666;
+}
+/*adds paragraph and list style of font*/
+p, li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+/*adds style to unordered list*/
+ul {
+    list-style-type: none; /*removes bullets*/
+    padding: 0; /*helps to remove default padding*/
+}
+/*adds style to ordered list*/
+ol {
+    padding-left: 20px;
+    text-align: left;
+}
+/*adds margin to li items within ordered list*/
+ol li {
+    margin-bottom: 10px;
+}
+/*specifications for the text with id "Special-Text"*/
+#Special-Text {
+    text-align: left;
+    font-size: medium;
+    color: black;
+}
+/*specifications for the text with id "Method"*/
+#Method {
+    color: rgb(157, 0, 0);
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*specifications for the text with class "lobster-regular" and style of text.*/
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+  }
+  /*specifications for the text with id "Ingredients"*/
+#Ingredients {
+    color:rgb(157, 0, 0);
+}
+
+#loader-container {
+    position: fixed; /*sets fixed positon*/
+    top: 0; /*sets alignment*/
+    left: 0; /*sets alignment*/
+    width: 100%; /*takes up whole width of the screen*/
+    height: 100%; /*takes up whole height of the screen*/
+    z-index: 1000; /*Maintains loader above all other items in the page*/
+}
+/* class refering to loader creating 3 elements below*/
+#loader {
+    display: block; /*makes sure that element will be a block*/
+    /*sets the position*/
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    /*sets parameters of the loader*/
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px; /*Helps to center the loader*/
+    border-radius: 50%; /*makes loader into circle*/
+    border: 3px solid transparent; /*makes boarder transparent*/
+    border-top-color: rgb(45, 30, 255); /*sets colour of the loader*/
+    animation: spin 2s linear infinite; /*makes a spin animation of 2 seconds*/
+    z-index: 1002; /*sets position to be above the loading screen*/
+}
+
+/*Before loader  to create an extra circle in order to avoid using additional div*/
+#loader::before {
+    content: ''; /*empty element*/
+     /*sets the position*/
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;  /*makes loader into circle*/
+    border: 3px solid transparent; /*makes boarder transparent*/
+    border-top-color: rgb(255, 0, 0); /*sets colour of the loader*/
+    animation: spin 3s linear infinite; /*makes a spin animation of 2 seconds*/
+}
+/*After loader to create an extra circle in order to avoid using additional div*/
+#loader::after {
+    content: ''; /*empty element*/
+    /*sets the position*/
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%; /*makes loader into circle*/
+    border: 3px solid transparent; /*makes boarder transparent*/
+    border-top-color: rgb(246, 255, 0); /*sets colour of the loader*/
+    animation: spin 1.5s linear infinite; /*makes a spin animation of 2 seconds*/
+}
+/*defines animation "spin"*/
+@keyframes spin {
+    0% { transform: rotate(0deg); } /*starts animation from 0 degrees*/
+    100% { transform: rotate(360deg); } /*ends animation with 360 degrees*/
+}
+
+/*sets the position of the elements in the container*/
+#loader-container .loader-section {
+    position: fixed; /*makes position fixed*/
+    top: 0; /*positions elements to the tip of the page*/
+    width: 50%; /*takes up 50% of the page */
+    height: 100%; /*100% of the page height*/
+    background-color: #222; /*sets a background colour*/
+    z-index: 1000; /*makes sure elements are above content on the page*/
+}
+
+#loader-container .loader-section.section-left {
+    left: 0; /*positions the element to the left side*/
+}
+
+#loader-container .loader-section.section-right {
+    right: 0; /*positions the element to the right side*/
+}
+
+
+.active body {
+    overflow-y: auto; /* Enables vertical scroll after loading */
+}
+/*refering to class active in order to make JS work and make two parts of loader open the screen*/
+.active #loader-container .loader-section.section-left {
+    transform: translateX(-100%); /* allows section left go to left side by -100%*/
+    transition: all 0.7s 0.3s ease-in; /*adds smooth transition which continues 0.7 seconds and 0.3 seconds is the delay*/
+}
+
+.active #loader-container .loader-section.section-right {
+    transform: translateX(100%); /* allows section left go to right side by 100%*/
+    transition: all 0.7s 0.3s ease-in;  /*adds smooth transition which continues 0.7 seconds and 0.3 seconds is the delay*/
+}
+/*refering to active to ensure that elements disappear later*/
+.active #loader {
+    opacity: 0; /*makes the loader transparent*/
+    visibility: hidden; /*ensures to hide the loader*/
+    transition: all 0.3s ease-out; /*fade out*/
+}
