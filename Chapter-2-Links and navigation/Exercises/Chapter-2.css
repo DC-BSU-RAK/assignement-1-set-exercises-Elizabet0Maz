@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(to right, #0e640f, #0d3e02); /*colour of the background with gradient*/
+  }
+  /*Aligns text with this class to left and adds padding*/
+.Left-Aligned{
+    text-align: left;
+    padding-left: 40px;
+}
+/*styles paragraph tag*/
+p{
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 40px;
+    color:white;
+}
+/*styles h3 tag*/
+h3{
+    background-color: rgb(3, 112, 8);
+    color: white;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    display: inline-block;
+    color:white;
+}
+/*Navigation Bar class which removes bullets from list and sets margin with padding*/
+.Navigation-Bar{
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+/*styles link font*/
+a{
+    font-size: 25px;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+/* changes link colours when hovered over*/
+a:hover{
+    color: #2bff00;
+    text-decoration: none;
+}
+/*displayes NavBar lists inline*/
+.NavBar{
+    display: inline;
+}
+/*styles list*/
+li{
+    font-size: 25px;
+    display: inline;
+    color:white;
+}
+/*styles font and padding in class "List*/
+.List{
+    padding-left: 15px;
+    color:white;
+}
+/*aligns text and contents inside the container*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  /*styles a content box*/
+.content-box {
+    background-color: rgba(29, 60, 6, 0.8);
+    max-width: 1800px;
+    width: 90%;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+/*styles all the text with heading class in the page*/
+.Heading{
+    text-align: center;
+    padding: 20px;
+    color:white;
+}
+/*adds a box around the text if it has class "Review-Box and styles it accordingly*/
+.Review-Box {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: black;
+    border-width: 6px;
+    box-shadow:
+    0 0 5px #00AA00,
+    0 0 10px #00AA00,
+    0 0 20px #00AA00,
+    0 0 40px #00AA00,
+    0 0 60px #00AA00;
+
+}
+/*Styles the button on the page for the clickable link connecting them via "Button" class*/
+.Button{
+    background-color: #1a5e16;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
