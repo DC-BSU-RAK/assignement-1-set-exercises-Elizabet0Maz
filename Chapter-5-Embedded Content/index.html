@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css"> <!-- Links external CSS file -->
+    <meta name="author" content="Elizabet Maznychenko"> <!-- Author metadata -->
+    <title>The Video</title>
+</head>
+<body>
+    <script src="Script.js"></script>
+
+    <!-- Magnifier Image Container -->
+    <div class="img-magnifier-container">
+        <img id="Image" src="panorama-3725657.jpg" alt="Mountains">
+    </div>
+
+    <!-- This keeps the video and credits always on top of the magnifier -->
+    <div class="content-box">
+        <!-- Video container -->
+        <div class="video-container">
+            <video controls loop poster="mountains-5958421_1280.jpg">
+                <source src="270940_small.mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Credits Section -->
+        <div class="Credits">
+            <span class="Text">
+                Video By <a href="https://pixabay.com/videos/matterhorn-switzerland-mountain-270940/">Pixabay</a>
+                & Poster by <a href="https://pixabay.com/photos/mountains-snow-swiss-flag-summit-5958421/">Jon Hoefer</a>
+            </span>
+        </div>
+    </div>
+
+    <script>
+        // Magnify function for the image
+        magnify("Image", 3);
+    </script>
+</body>
+</html>

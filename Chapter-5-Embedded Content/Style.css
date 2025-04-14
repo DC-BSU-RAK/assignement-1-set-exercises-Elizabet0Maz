@@ -1,0 +1,85 @@
+#Image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(40%) blur(3px);
+    z-index: -1;
+}
+
+/* Content Box (Video + Credits) */
+.content-box {
+    position: absolute;
+    top: 20%; /* Moves the box down */
+    left: 50%; /* Centers the box horizontally */
+    transform: translateX(-50%); /* Ensures it's perfectly centered */
+    width: 90%; /* Adjust the width to make it smaller */
+    max-width: 700px; /* Limit the maximum width of the content box */
+    padding: 20px; /* Padding inside the box */
+    background-color: rgba(255, 255, 255, 0.63); /* Slight transparency */
+    z-index: 10;
+    box-sizing: border-box; 
+}
+
+/* Video Container */
+.video-container {
+    width: 96%; /* Make the video container fill the box */
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px; /* Space between video and credits */
+    box-shadow: inset 0 0 0 10px #fff; /* Inner border for video container */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video Style */
+video {
+    width: 100%;
+    height: 100%;
+    max-width: 100%; /* Ensure the video doesn't overflow */
+    object-fit: contain; /* Maintain the aspect ratio and prevent cropping */
+    display: block;
+}
+
+/* Credits Section */
+.Credits {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px; /* Smaller font size for credits */
+    color: rgb(83, 166, 199);
+    line-height: 1.5;
+}
+
+/* Text Style for Credits */
+.Text {
+    background-color: #ffffffb0;
+    border: 3px solid #ffffff82;
+    padding: 10px;
+    font-style: oblique;
+}
+
+/* Link Styling */
+a {
+    color: rgb(83, 166, 199);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 255);
+}
+
+.img-magnifier-container {
+    position: relative;
+  }
+
+/* Magnifier Glass */
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  cursor: none;
+  /* Set the size of the magnifier glass: */
+  width: 150px;
+  height: 150px;
+}
