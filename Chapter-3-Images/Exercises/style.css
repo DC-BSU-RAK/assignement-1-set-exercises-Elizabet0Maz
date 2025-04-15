@@ -1,0 +1,68 @@
+/*style of body*/
+body{
+  background-color: rgb(0, 0, 0); /*colour of background*/
+}
+/* Wrapper to align everything center vertically */
+.Container {
+  display: flex; /*centers the content*/
+  gap: 20px; /* space between boxes */
+}
+
+/*style for all content boxes */
+.Content-Box {
+  width: 90%; /*width of the content box*/
+  padding: 30px; /*padding of the content box*/
+}
+/*Style for 3 different image boxes, since its same styling can be put into one line*/
+.image-box1, .image-box2, .image-box3 {
+  width: 390px; /*width of each image*/
+  height: 540px; /*height of each image*/
+  border: 7px solid #ffffff; /*adds white boarder*/
+  overflow: hidden;
+  margin: 0 auto; /* Center image box horizontally */
+  margin-top: 20px; /*Adds margin on the top*/
+  box-shadow:
+  0 0 5px #ffffff,
+  0 0 10px #ffffff,
+  0 0 20px #ffffff,
+  0 0 40px #ffffff; /*shadow box*/
+}
+
+/*style of img for 3 different image boxes, since its same styling can be put into one line*/
+.image-box1 img, .image-box2 img, .image-box3 img {
+  max-width: 400px; /*retains images aspect ratio*/
+  height: auto; /*keeps height on auto*/
+}
+
+/*style for images whenever mouse hovers over them*/
+.image-box1 img:hover{
+  filter: invert(100%); /*adds two types of filters*/
+  transform: scale(1.02); /*Increases size of image */
+}
+.image-box2 img:hover{
+  filter: invert(100%) sepia(100%); /*adds two types of filters*/
+  transform: scale(1.02); /*Increases size of image */
+}
+.image-box3 img:hover {
+  filter: grayscale(100%) invert(100%); /*adds two types of filters*/
+  transform: scale(1.02); /*Increases size of image */
+}
+
+/*Style for paragraphs*/
+p {
+  text-align: center; /*aligns text to centre*/
+  margin-top: 20px; /*adds margin on top*/
+  font-family: 'Times New Roman', Times, serif; /*adds style to font*/
+  font-size: 20px; /*adds font size*/
+  color: rgb(255, 255, 255); /*changes colour of the text*/
+  padding-top: 20px; /*Adds padding on top*/
+  text-shadow: 0 0 7px rgb(255, 255, 255); /*Adds shadow to the text*/
+}
+/*styles a link*/
+a{
+  color: white; /*colour of link*/
+}
+/*changes the text whenever mouse hovers over*/
+a:hover{
+  color: red; /*changes colour of the link*/
+}
