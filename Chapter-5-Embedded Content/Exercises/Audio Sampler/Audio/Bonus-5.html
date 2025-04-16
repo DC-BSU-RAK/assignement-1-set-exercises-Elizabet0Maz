@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elizabet Maznychenko">
+    <link rel="stylesheet" href="Bonus-5.css">
+    <title>Sound Board</title>
+</head>
+<body>
+    <!--Heading-->
+    <h1>Text To Speech</h1>
+    <div id="Text-to-Speech">
+        <textarea id="content"></textarea> <!--Text area to insert the text-->
+        <button id="btnArea">Speak Now</button> <!--Button for text to speech-->
+    </div>
+
+
+
+    <!--Audio tag with sources and Ids for each-->
+    <audio src="ah-ha.mp3" id="Ah-ha"></audio>
+    <audio src="back-of-the-net.mp3" id="Back-of-the-net"></audio>
+    <audio src="bangoutoforder.mp3" id="Bangou-to-forder"></audio>
+    <audio src="dan.mp3" id="Dan"></audio>
+    <audio src="emailoftheevening.mp3" id="Email-for-the-evening"></audio>
+    <audio src="hellopartridge.mp3" id="Hello-Partridge"></audio>
+    <audio src="iateascotchegg.mp3" id="I-ate-scotch-egg"></audio>
+    <audio src="imconfused.mp3" id="Im-confused"></audio>
+
+    <!--Sound Board along with navigation arrows-->
+    <div class="Sound-Box"> <!--class for the sound board box-->
+        <div id="Sound-Buttons"></div>
+        <div class="arrows"> <!--adds class to put navigation buttons on place-->
+            <button class="arrow-btn" id="back-button">←</button> <!--button for back-->
+            <button class="arrow-btn" id="next-button">→</button> <!--button for next-->
+        </div>
+    </div>
+    <!--connects Java Script file to the HTML-->
+    <script src="Script.js"></script>
+</body>
+</html>

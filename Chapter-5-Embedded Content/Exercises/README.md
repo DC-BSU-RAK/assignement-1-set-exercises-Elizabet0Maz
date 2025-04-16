@@ -33,7 +33,6 @@ Use the below example as a reference:
 ![image](Audio%20Sampler/Soundboard.png)
 
 #### Further Extension Problems
-
 The radio show loved the sampler you made for them before, but they'd like to give a more advanced system a go. In a new directory, build on top of your previous sampler and include the following new ideas:
 
 * The show would like to include a text to speech feature. This feature allows presenters to type any text they like into a `<textarea>` element and have it converted to audio which then plays immediately. This new feature should be displayed in a seperate column next to the audio samples (see image below for reference);

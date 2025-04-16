@@ -1,0 +1,135 @@
+* {
+    box-sizing: content-box;
+}
+
+/*style of the body*/
+body {
+    background: url('abstract-1780321_1280.png') center/cover no-repeat; /*background image centered and doesn't repeat*/
+    font-family: Arial, Helvetica, sans-serif; /*font style*/
+    height: 100vh; /*height viewpoint*/
+    text-align: center; /*text alignment*/
+    overflow: hidden; /*hides overflow*/
+    margin: 0; /*removes default margin*/
+    padding: 0; /*removes defaul padding*/
+}
+
+/*Style of "Text-to-Speech"*/
+#Text-to-Speech {
+    position: absolute; /*sets position to absolute*/
+    left: 10%; /*moves the box to left*/
+    top: 30%; /*moves the box to bottom*/
+    box-shadow: 0px 2px 20px black; /*Adds shadow to the box*/
+    padding: 50px; /*sets padding*/
+    background: gray; /*sets colour of the box*/
+    border-radius: 10px; /*adds border radius*/
+    width: 600px; /*sets the width of the box*/
+}
+
+/*styles "btnArea"*/
+#btnArea{
+   margin-left: 12%; /*adds margin to center the button*/
+}
+
+/*styles the text Area*/
+textarea {
+    width: 500px; /*width of the text area*/
+    height: 200px; /*heigh of the text area*/
+    margin-bottom: 20px; /*adds margin*/
+    border: 10px ridge white; /*adds a ridge border*/
+    font-weight: 600; /*makes font bold*/
+    padding: 15px; /*adds a padding*/
+}
+
+/*Styles Buttons*/
+button {
+    padding: 10px 145px; /*sets padding of buttons*/
+    background-color: plum; /*colour of buttons*/
+    color: white; /*colour of the text in the buttons*/
+    border: none; /*removes borders*/
+    cursor: pointer; /*changes cursor to pointer*/
+    font-weight: 900; /*makes font more bold*/
+    display: block; /*displays in block*/
+    font-size: 20px; /*sets font size*/
+    text-transform: uppercase; /*transforms font to uppercase*/
+    letter-spacing: 3px; /*adds spacing between the letters*/
+}
+
+/*Styles Heading*/
+h1 {
+    color: white; /*adds font colout*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*adds font style*/
+    text-shadow: 5px 4px #000000; /*adds shadow to the text*/
+    font-weight: 1000; /*makes font bolder*/
+    font-size: 80px; /*sets font size*/
+    background-color: rgb(126, 126, 243); /*background of h1*/
+    border-radius: 5px; /*adds radius*/
+    border: 20px solid rgb(126, 126, 243); /*adds border*/
+    outline: 5px solid white; /*adds an outline*/
+    box-shadow: 0px 0px 50px white; /*adds a shadow*/
+    position: absolute; /*sets position to absolute*/
+    left: 9%; /*helps to place it above the "Text-to-Speech" box*/
+}
+
+/*Styles the Sound Board buttons*/
+.btn {
+    background-color: rgb(126, 126, 243); /*Sets button colour*/
+    border-radius: 5px; /*adds a radius*/
+    margin: 1rem; /*adds a margin*/
+    border: 2px solid rgb(255, 255, 255); /*adds a border*/
+    padding: 1.5rem 3rem; /*adds a padding*/
+    font-size: 1.3rem; /*sets a font size*/
+    font-family: inherit; /*inherits the font family from the body*/
+    font-style: bold; /*sets style of the font*/
+    cursor: pointer; /*changes cursor to pointer*/
+    transition: all 0.2s ease-in-out; /*adds smooth transition*/
+    color: white; /*sets colour of the font*/
+    width: 100%; /*sets the width*/
+    max-width: 300px; /*adds maximum width*/
+}
+
+/*Adds sort of pressing animation*/
+.btn:active {
+    transform: scale(0.8); /*transforms the scale*/
+    transform: translateY(4px);  /*transforms it to go slightly down to make it seem like button is pressed*/
+    box-shadow: 0px 0px 10px rgb(255, 255, 255); /*adds shadow*/
+}
+
+/*Styles whenever sound board button is hovered over*/
+.btn:hover {
+    color: rgb(0, 0, 0); /*changes text colour*/
+    background-color: rgb(196, 204, 240); /*changes colour of the button*/
+    box-shadow: 0px 0px 50px rgb(255, 255, 255); /*adds a shadow*/
+    border: none; /*removes the borders*/
+}
+
+/*adds style to the "Sound-Box"*/
+.Sound-Box {
+    position: absolute; /*sets position to absolute*/
+    right: 6.5%; /*moves the sound box more to the left*/
+    top: 20%; /*moves box more down*/
+    background: rgba(255, 255, 255, 0.2); /*sets colour of the background*/
+    padding: 20px; /*adds padding*/
+    border: 5px solid black; /*sets border*/
+    border-radius: 10px; /*adds a radius to the box*/
+}
+
+/*Styles the navigation buttons*/
+.arrows {
+    display: flex; /*hlps to place buttons next to each other horizontally*/
+    justify-content: center; /*centers the buttons*/
+    gap: 20px; /*adds a gap between them*/
+    width: 100%; /*makes it a full width*/
+}
+
+/*styles each button*/
+.arrow-btn {
+    font-size: 25px; /*sets font size*/
+    padding: 10px 20px; /*adds padding*/
+    cursor: pointer; /*changes cursor to pointer*/
+    border-radius: 5px; /*adds radius*/
+}
+ /*style of buttons whenever the mouse hovers over them*/
+.arrow-btn:hover {
+    background-color: rgb(220, 180, 240); /*changes button colour*/
+    color: black; /*changes the text colour*/
+}
