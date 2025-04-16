@@ -1,0 +1,45 @@
+/*style of div*/
+div {
+    display: inline-block; /*makes blocks inlines*/
+    font-family: sans-serif; /*font style*/
+    font-size: 20px; /*size of font*/
+    margin: 25px; /*adds margin*/
+    line-height: 100px; /*adds height of line*/
+    text-align: center; /*aligns text to the centre*/
+    width: 200px; /*sets width*/
+    height: 200px; /*sets height*/
+  }
+
+/*Style of body*/
+body {
+    margin: 100px auto; /*sets margin*/
+    width: max-content; /*sets width of max content*/
+}
+
+/*styles "A" class adds a right corner red shadow and a thin border of blueviolet*/
+.A{
+    box-shadow: 7px 10px 10px 3px red;
+    border: 4px solid blueviolet;
+}
+
+/*Styles "B" class adds a shadow inside the box in the top left corner and adds greenyellow border*/
+.B{
+    box-shadow: 10px 10px 15px black inset;
+    border: 4px solid greenyellow;
+}
+
+/*Styles "C" Class Adds one orange border then outline or blue and two box shadows of red and green*/
+.C{
+    border: 4px solid orange; 
+    outline: 10px solid blue;
+    border-radius: 20px;
+    box-shadow:
+    0 0 0 20px red,
+    0 0 0 30px green;
+}
+
+/*styles "D" class adds red border and a doubling text by using a specific shadow parameters*/
+.D{
+    border: 4px solid red;
+    text-shadow: 2px 5px rgb(73, 73, 73);
+}
