@@ -1,0 +1,95 @@
+/*Style of body*/
+body {
+    display: flex; /*flex box layout*/
+    justify-content: center; /* horizontally centres the content*/
+    align-items: center; /*vertically centers the content*/
+    background: url('zbynek-burival-GrmwVnVSSdU-unsplash.jpg') center/cover no-repeat; /*link to the image and ensures to not repeat it*/
+}
+
+/*Styles "container"*/
+.container {
+    width: 600px; /*adds width of the box*/
+    height: 520px; /*adds height of the box*/
+    background-color: #ffffff60; /*Adds colour to the box*/
+    color: #FFFFFF; /*sets colour of the font*/
+    padding: 25px; /*adds padding*/
+    border-radius: 10px; /*adds border radius*/
+    margin-top: 70px; /* adds margin on the top*/
+    margin-right: 700px; /*adds margin on the right*/
+}
+/*Styles h1*/
+h1 {
+    display: flex; /*flex box to center the text*/
+    justify-content: center; /* horizontally centres the content*/
+    align-items: center; /*vertically centers the content*/
+    background-color: black; /*adds background colour*/
+    padding: 5px; /*adds padding*/
+    border-radius: 5px; /*adds border radius*/
+}
+/*Styles h2*/
+h2 {
+    text-align: center; /*aligns text to center*/
+    padding-top: 45px; /*adds padding on top*/
+    margin-top: 0; /*gets rid of default margin*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*adds a font style*/
+    font-size: 70px; /*sets font size*/
+    font-weight: 600; /*makes font bolder*/
+    text-shadow: 5px 4px #000000; /*adds shadow to the text*/
+}
+/*Styles paragraph*/
+p {
+    font-size: 24px; /*sets font size*/
+    text-shadow: 
+        1px 1px 0px black,   
+        -1px -1px 0px black, 
+        1px -1px 0px black, 
+        -1px 1px 0px black; /*adds an outline around the text but still its a shadow*/
+}
+
+/*Styles "wrapper"*/
+.wrapper {
+    display: flex;  /*flex box to center the text*/
+    gap: 40px; /*adds gap between two boxes */
+    margin: 20px 60px; /*sets a margin*/
+}
+
+/*Styles "wrapper" div*/
+.wrapper div {
+    display: flex; /*flex box to center the text*/
+    flex-direction: column; /*places content in a column*/
+    justify-content: center; /* horizontally centres the content*/
+    align-items: center; /*vertically centers the content*/
+}
+
+/*Styles Input*/
+input {
+    width: 200px;  /*sets width*/
+    padding: 10px; /*adds paadding*/
+    font-size: 50px; /*sets font size*/
+    border-radius: 5px; /*adds border radius*/
+    border: 2px solid #fff; /*adds border*/
+    background-color: #000000; /*adds colour to the boxes*/
+    color: rgb(255, 255, 255); /*adds colour to font*/
+    text-align: center; /*aligns text to centre*/
+}
+
+/*Styles button*/
+button {
+    cursor: pointer; /*changes cursor to pointer*/
+    background-color: rgb(0, 0, 0); /*sets colour of the button*/
+    border-radius: 5px; /*adds border radius*/
+    border: 2px solid rgb(255, 255, 255); /*adds border*/
+    font-size: 30px; /*sets font size*/
+    font-weight: bold; /*makes text bold*/
+    text-align: center; /*alings text to centre*/
+    margin-top: 20px; /*adds margin on top*/
+    color: #FFFFFF; /*sets colour of the font*/
+    margin-left: 190px; /*adds margin on the left*/
+    padding: 15px; /*adds padding*/
+}
+
+/*Styles buttons whenever hovered over*/
+button:hover {
+    background-color: rgb(255, 255, 255); /*changes colour of the button*/
+    color: black; /*changes colour of the text*/
+}

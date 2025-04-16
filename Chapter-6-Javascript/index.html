@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elizabet Maznychenko"> <!-- Author metadata -->
+    <title>Petrol Calculator</title> <!--Title of the page -->
+    <link rel="stylesheet" href="style.css"> <!--Links external CSS file-->
+  <script src="index.js"></script>
+</head>
+
+<body> 
+    <div class="container"> <!--adds class container-->
+        <h1>Petrol Calculator</h1> <!--heading-->
+        <div class="wrapper"> <!--adds class wrapper-->
+            <div>
+                <p>Petrol price per litre </p> <!--adds paragraph-->
+                <input id="Petrol_Price"><!--adds id "Petrol_Price"-->
+            </div>
+            <div>
+                <p>Litre</p> <!--adds paragraph-->
+                <input id="liters" placeholder="1" type="number"> <!--creates an input with id liters and has 1 as a placeholder with type of number-->
+            </div>
+        </div>
+        <!--button which calculates the amount-->
+        <div id="btn">
+        <button onclick="calculate()">Total Amount</button>
+        <h2 id="totalAmount"></h2><!--shows the amount calculated-->
+    </div>
+    </div>
+</body>
+</html>
