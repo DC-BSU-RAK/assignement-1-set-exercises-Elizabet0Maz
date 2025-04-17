@@ -1,0 +1,160 @@
+* {
+    margin: 0; /*removes default margin*/
+    padding: 0; /*removes default padding*/
+    box-sizing: border-box; /*sets the formating of border-box*/
+    font-family: cursive; /*sets style for font*/
+    list-style: none; /*removes style of the list so gets rid of bullets*/
+    text-decoration: none; /*removes decoration of the text*/
+}
+ 
+/*styles body*/
+body {
+    background-color: black; /*sets background colour*/
+}
+
+/*style of the header*/
+header {
+    position: fixed; /*sets position to fixed*/
+    top: 0; /*sticks to top*/
+    left: 0; /*sticks to left*/
+    right: 0; /*sticks to right*/
+    background: white; /*sets background to white*/
+    display: flex; /*displays horizontally*/
+    justify-content: space-between; /*adds space between the items*/
+    align-items: center; /*centers verticlally items*/
+    padding: 0 8%; /*adds padding*/
+    box-shadow: 0 5px 10px black; /*adds a shadow to the box*/
+}
+
+/*Styles inside the header class "Web-Development"*/
+header .Web-Development {
+    font-size: 30px; /*sets size of text*/
+    font-weight: 900; /*makes text bold*/
+    color: black; /*sets font colour*/
+    transition: .5s; /*adds a transition*/
+}
+
+/*Styles inside the header class "Web-Development" whenever user hovers over it*/
+header .Web-Development:hover {
+    transform: scale(1.2); /*increases the size*/
+}
+
+/*positions the unordered list and list items inside the header*/
+header nav ul li {
+    position: relative; /*keeps position relative*/
+    float: left; /*aligns items next to one another*/
+}
+
+/*styles a link*/
+header nav ul li a {
+    padding: 30px; /*adds padding*/
+    color: black; /*sets font colour black*/
+    font-size: 20px; /*sets font size to 20*/
+    display: block; /*displays in block*/
+}
+
+/*styles whenever the link is being hovered over*/
+header nav ul li a:hover {
+    background: black; /*changes background colour to black*/
+    color: white; /*changes the font colour*/
+    cursor: pointer; /*changes cursor to pointer*/
+}
+
+/*Styles class "main content"*/
+.main-container {
+    width: 1536px; /*sets widht of the box*/
+    height: 600px; /*sets height of the box*/
+    position: absolute; /*sets position to absolute*/
+    top: 12vh; /*sets position of the top of point of view*/
+    margin-left: 0px; /*removes default margin*/
+    background-color: #ffffff36; /*sets background colour*/
+    border: 4px solid rgb(255, 255, 255); /*adds border*/
+    padding: 50px; /*sets padding*/ 
+    display: flex; /*displays horizontally*/
+    align-items: center; /*aligns items vertically*/
+    justify-content: space-between; /*adds a space between left center and right*/
+}
+
+/*adds style for the "content box 1"*/
+.Content-box-1 {
+    font-size: 30px; /*sets a font size*/
+    border: 5px solid rgb(255, 255, 255); /*adds a border*/
+    overflow: hidden; /*hides the overflow*/
+    width: 500px; /*sets width of the box*/
+    height: 600px; /*sets height of the box*/
+    padding-top: 80px; /*adds a padding at the top*/
+    padding-left: 60px; /*adds padding to the left*/
+    color: white; /*changes colour of font*/
+}
+
+.Content-box-2 {
+    font-size: 25px; /*sets a font size*/
+    border: 5px solid rgb(255, 255, 255); /*adds a border*/
+    overflow: hidden; /*hides the overflow*/
+    width: 500px; /*sets width of the box*/
+    height: 600px; /*sets height of the box*/
+    padding-top: 80px; /*adds a padding at the top*/
+    padding-left: 30px; /*adds padding to the left*/
+    color: white; /*changes colour of font*/
+}
+
+/*positions class contents*/
+.contents {
+    padding-right: 70px;
+}
+
+/*positions h2*/
+h2 {
+    text-align: center;
+    padding-right: 60px;
+}
+
+/*styles the center box*/
+.center-box {
+    display: flex; /*displays horizontally*/
+    flex-direction: column; /*makes it a column*/
+    align-items: center; /*aligns items vertically*/
+    justify-content: center; /*adds spaces between items*/
+    height: 600px; /*sets height*/
+    width: auto; /*makes width automatical to the height*/
+    gap: 30px; /*space between image and button*/
+}
+
+/*styles the image*/
+.center-box img {
+    max-height: 1000px; /*changes the maximum height of the image*/
+    max-width: 400px; /*changes the maximum width of the image*/
+    border: 4px inset rgb(255, 255, 255); /*adds border to image*/
+    margin-top: -80px; /*sets the top margin*/
+}
+
+/*styles the button*/
+.center-box button {
+    padding: 20px 80px; /*adds padding*/
+    font-size: 30px; /*sets font size*/
+    cursor: pointer; /*changes cursor to pointer*/
+    color: white; /*sets font to white*/
+    background-color: black; /*sets colour of button*/
+    border: 4px solid white; /*adds border*/
+    box-shadow: 0px 0px 20px white; /*adds shadow*/
+}
+
+/*styles the button whenever user hovers over it*/
+.center-box button:hover {
+    border: none; /*removes border*/
+    background-color: white; /*changes the colour of the button*/
+    color: black; /*changes the colour of the font*/
+    box-shadow: 0px 0px 30px white; /*changes the shadow*/
+}
+
+/*styles the footer*/
+footer {
+    position: absolute; /*makes position absolute*/
+    bottom: 0; /*sticks footer to the bottom*/
+    width: 100%; /*makes full width*/
+    border: 4px solid white; /*adds a border*/
+    color: white; /* sets font colour*/
+    text-align: center; /*aligns text to the centre*/
+    padding: 20px; /*adds padding*/
+    background-color: black; /*sets colour of the footer*/
+}
