@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Guess the Colou!</title>
+</head>
+<body>
+    <h1>guess the color</h1>
+    <p id="colourName">(R , G , B)</p><!--creates RBG-->
+    <div id="box"> <!--Box with colours-->
+        <button class = "btn" id='0' onclick = "guess()"></button><!--button for colour on the left-->
+        <button class = "btn" id='1' onclick = "guess()"></button><!--button for colour on the middle-->
+        <button class = "btn" id='2' onclick = "guess()"></button><!--button for the colour on the right-->
+  
+    </div>
+    <div id="replay-button">
+        <button id='replay' onclick='replay()'>replay</button> <!--adds a replay button-->
+    </div>
+    <script src="script.js"></script> <!--Connects java script file to HTML-->
+</body>
+</html>

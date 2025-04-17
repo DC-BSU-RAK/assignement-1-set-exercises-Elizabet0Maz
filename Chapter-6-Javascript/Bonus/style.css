@@ -1,0 +1,62 @@
+/*style of body*/
+body { 
+    Margin: 0; /*removes default margin*/
+    background-color: black; /*sets colour of the background*/
+}
+/*style of h1*/
+h1{
+    text-align: center; /*aligns text to centre*/
+    font-size: 50px; /*sets size of font*/
+    font-weight: 400; /*adds boldness to the text*/
+    font-family: cursive; /*changes font style*/
+}
+/*styles the "colourName"*/
+#colourName{
+    text-align: center; /*Aligns text to centre*/
+    font-size:50px; /*sets font size*/
+    font-weight: 600; /*adds bolness to the font*/
+    margin-top: 60px; /*adds margin on the top to move it a bit down*/
+    color: white; /*sets font colour*/
+}
+
+#box{/* for box and btn u will understand idk how to explain but it's easy to understand */
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 3px;
+    border: 4px solid white;
+    box-shadow: 0 0 20px white;
+}
+/*styles the replay button position*/
+#replay-button{
+    text-align: center; /*aligns it to the centre*/
+    margin-top: 70px; /*adds margin on top*/ 
+}
+
+/*styles the replay button itself*/
+#replay{ 
+    height: 90px; /*sets height of the button*/
+    width: 300px; /*sets width of the button*/
+    color: white; /*sets font colour*/
+    font-size: 50px; /*sets font size*/
+    font-weight: 300; /*makes font a bit bold*/
+    text-align: center; /*aligns text to the center*/
+    cursor: pointer; /*changes cursor to pointer*/
+    background-color: #000000; /*sets colour of the button*/
+    border: 4px solid white; *Adds the border*/
+    box-shadow: 0 0 20px white; /*adds shadow*/
+
+}
+
+/*changes the button whenever user hovers over it*/
+#replay:hover{
+    background-color: white; /*changes the button colour*/
+    border: none; /*gets rid of the border*/
+    color: black; /*changes colour of font*/
+}
